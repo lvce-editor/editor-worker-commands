@@ -13,4 +13,17 @@ export default [
       'no-useless-escape': 'off',
     },
   },
+  {
+    files: ['package.json'],
+    rules: {
+      'package-json/valid-main': 'off',
+    },
+  },
+  {
+    files: ['packages/**/*test.ts'],
+    rules: {
+      'sonarjs/assertions-in-tests': 'off',
+      'jest/expect-expect': 'off',
+    },
+  },
 ]
