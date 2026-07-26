@@ -6,6 +6,9 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
+  "scripts": {
+    "build:watch": "esbuild --format=esm --bundle --external:node:buffer --external:electron --external:ws --external:node:worker_threads --watch ../editor-commands-worker/src/editorCommandsWorkerMain.ts --outfile=../../.tmp/dist/dist/editorCommandsWorkerMain.js"
+  },
   "devDependencies": {
     "@babel/preset-typescript": "^7.27.1",
     "@lvce-editor/verror": "^1.7.0",
