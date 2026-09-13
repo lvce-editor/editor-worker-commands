@@ -1,7 +1,7 @@
 import { join } from 'node:path'
-import { root } from './root.js'
+import { root } from './root.ts'
 import { cp } from 'node:fs/promises'
-import { buildE2eExtensions } from './buildE2eExtensions.js'
+import { buildE2eExtensions } from './buildE2eExtensions.ts'
 
 const sharedProcess = await import('@lvce-editor/shared-process')
 
