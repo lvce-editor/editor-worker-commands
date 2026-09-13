@@ -1,6 +1,6 @@
 import { build } from 'esbuild'
 import { join } from 'node:path'
-import { root } from './root.js'
+import { root } from './root.ts'
 
 const extensionNames = ['editor.completion-click']
 
