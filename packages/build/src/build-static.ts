@@ -5,7 +5,7 @@ import { buildE2eExtensions } from './buildE2eExtensions.ts'
 
 const sharedProcess = await import('@lvce-editor/shared-process')
 
-process.env.PATH_PREFIX = '/editor-commands-worker'
+process.env.PATH_PREFIX = '/editor-worker-commands'
 const { commitHash } = await sharedProcess.exportStatic({
   root,
   extensionPath: '',
